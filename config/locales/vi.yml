@@ -1,0 +1,13 @@
+vi:
+  static_pages:
+    about:
+      title: "thông tin"
+      tech : "dạy web "
+      sample: "đây là ứng dụng demo"
+      base_title: "ứng dụng rails demo"
+    help:
+      title: "Trợ giúp"
+      get_help: "để góp ý cho tôi,click đây"
+    home:
+      title: "Trang chủ"
+      info: "đây là trang chủ cho "
