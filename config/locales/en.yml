@@ -1,2 +1,14 @@
 en:
-  hello: "Hello world"
+  static_pages:
+    about:
+      title: "about"
+      tech : "to teach web development with"
+      sample: "This is the sample application for the tutorial."
+      base_title: "Ruby on Rails Tutorial Sample App"
+    help:
+      title: "help"
+      get_help: "To get help on this sample app, see the"
+    home:
+      title: "home"
+      info: "This is the home page for the"
+
