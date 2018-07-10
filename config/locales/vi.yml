@@ -11,3 +11,8 @@ vi:
     home:
       title: "Trang chủ"
       info: "đây là trang chủ cho "
+  users:
+    new:
+      title: "New User"
+      content_title: "Đăng ký"
+      content: "Đây là trang đăng ký dành cho người dùng mới."

@@ -1,14 +1,19 @@
 en:
   static_pages:
     about:
-      title: "about"
+      title: "About"
       tech : "to teach web development with"
       sample: "This is the sample application for the tutorial."
       base_title: "Ruby on Rails Tutorial Sample App"
     help:
-      title: "help"
+      title: "Help"
       get_help: "To get help on this sample app, see the"
     home:
-      title: "home"
+      title: "Home"
       info: "This is the home page for the"
-
+      sign_up: "Sign up now!"
+  users:
+    new:
+      title: "New User"
+      content_title: "Sign up"
+      content: "This will be a signup page for new users."
