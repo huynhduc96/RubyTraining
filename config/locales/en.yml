@@ -17,3 +17,9 @@ en:
       title: "New User"
       content_title: "Sign up"
       content: "This will be a signup page for new users."
+      flash: "Welcome to the Sample App!"
+  header:
+      sample_app: "Sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
