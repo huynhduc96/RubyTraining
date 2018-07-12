@@ -33,3 +33,4 @@ en:
     new_user: "New user?"
     wrong_pass: "Invalid email/password combination"
     account: "Account"
+    remember: "Remember me on this computer"
