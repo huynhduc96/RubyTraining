@@ -32,3 +32,5 @@ vi:
     new_user: "Bạn là người mới?"
     wrong_pass: "Nhầm email/password"
     account: "Tài Khoản"
+    remember: "lưu mật khẩu trên máy tính này"
+
