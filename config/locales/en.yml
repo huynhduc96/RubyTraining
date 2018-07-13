@@ -19,6 +19,22 @@ en:
       content: "This will be a signup page for new users."
       flash: "Welcome to the Sample App!"
       user: "User"
+      update: "Profile updated"
+      flash_log_in: "Please log in."
+    edit:
+      title: "Edit user"
+      confirmation: "Confirmation"
+      save_changes: "Save changes"
+      change: "change"
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      edit_title_content: "Update your profile"
+      delete: "User deleted"
+    index:
+      title: "All users"
+      delete: "delete"
+      confirm: "You sure?"
   header:
     sample_app: "Sample app"
     home: "Home"

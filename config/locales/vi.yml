@@ -18,6 +18,22 @@ vi:
       content: "Đây là trang đăng ký dành cho người dùng mới."
       flash: "Chào mừng! Đây là Sample App!"
       user: "Người dùng"
+      update: "Đã update hồ sơ người dùng"
+      flash_log_in: "Hãy đăng nhập."
+    edit:
+      title: "Chỉnh sửa người dùng"
+      confirmation: "Xác nhận"
+      save_changes: "Lưu"
+      change: "Đổi"
+      name: "Tên"
+      email: "Email"
+      pass: "Mật Khẩu"
+      edit_title_content: "Thay Đổi Thông tin Người Dùng "
+      delete: "Đã xóa người dùng"
+    index:
+      title: "Danh sách người dùng"
+      delete: "Xóa"
+      confirm: "Bạn có chắc chắn?"
   header:
     sample_app: "Sample app"
     home: "Trang chủ"
