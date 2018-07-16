@@ -9,25 +9,30 @@ class UsersController < ApplicationController
   end
 
   def show
+    return if @user&.activated
     redirect_to root_url unless @user
   end
 
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.users.per_page
+    @users = User.where(activated: true)
+                 .paginate page: params[:page],
+                           per_page: Settings.users.per_page
   end
 
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "users.new.flash"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t("users.create.check_your_email")
+      redirect_to root_url
     else
+      flash.now[:danger] = t("users.create.error")
       render :new
     end
   end
 
-  def edit; end
+  def edit;
+  end
 
   def update
     if @user.update_attributes user_params
@@ -39,21 +44,24 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    flash[:success] = t "users.edit.delete"
+    @user.destroy
+    flash[:success] = t("users.destroy.delete_noti")
     redirect_to users_url
   end
 
-  private
-
-  def find_user
-    @user = User.find_by id: params[:id]
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
   end
 
   private
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+                                 :password_confirmation
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
   end
 
   def logged_in_user

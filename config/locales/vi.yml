@@ -34,6 +34,12 @@ vi:
       title: "Danh sách người dùng"
       delete: "Xóa"
       confirm: "Bạn có chắc chắn?"
+    create:
+      check_your_email: "Please check your email to activate your account."
+      error: "Error, please try again"
+    destroy:
+      delete_noti: "Đã xoá user"
+      cant_find_user: "Không thể xoá user"
   header:
     sample_app: "Sample app"
     home: "Trang chủ"
@@ -49,4 +55,16 @@ vi:
     wrong_pass: "Nhầm email/password"
     account: "Tài Khoản"
     remember: "lưu mật khẩu trên máy tính này"
+    create:
+      account_not_activated: "Account chưa được kích hoạt. kiểm tra email nhé."
+      invalid_message: "invalid email or password"
+  account_activation:
+    success_activate: "Kích hoạt thành công"
+    invalid_activate: "không hợp lệ activation link"
+  user_mailer:
+    account_activation_subject: "Kích hoạt tài khoản"
+    password_reset_subject: "Password reset"
+    account_activation:
+      welcome: "Chào mừng tới Sample App! Click vào link để kích hoạt tài khoản:"
+      activate: "Kích hoạt"
 
