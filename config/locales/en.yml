@@ -35,6 +35,12 @@ en:
       title: "All users"
       delete: "delete"
       confirm: "You sure?"
+    create:
+      check_your_email: "Please check your email to activate your account."
+      error: "Error, please try again"
+    destroy:
+      delete_noti: "delete"
+      cant_find_user: "can't user"
   header:
     sample_app: "Sample app"
     home: "Home"
@@ -50,3 +56,15 @@ en:
     wrong_pass: "Invalid email/password combination"
     account: "Account"
     remember: "Remember me on this computer"
+    create:
+      account_not_activated: "Account not activated. Check your email for the activation link."
+      invalid_message: "invalid email or password"
+  account_activation:
+    success_activate: "Active successful"
+    invalid_activate: "Invalid activation link"
+  user_mailer:
+    account_activation_subject: "Account activation"
+    password_reset_subject: "Password reset"
+    account_activation:
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
