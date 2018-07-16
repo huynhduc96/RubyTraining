@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
       if user.activated?
-        when_activated
+        when_activated user
       else
         message = t("sessions.create.account_not_activated")
         flash[:warning] = message
@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
     end
   end
 
-  def when_activated
+  def when_activated user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
     redirect_back_or user

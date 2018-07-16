@@ -11,6 +11,7 @@ vi:
     home:
       title: "Trang chủ"
       info: "đây là trang chủ cho "
+      sign_up: "Đăng ký ngay!"
   users:
     new:
       title: "New User"
@@ -20,6 +21,7 @@ vi:
       user: "Người dùng"
       update: "Đã update hồ sơ người dùng"
       flash_log_in: "Hãy đăng nhập."
+      forgot_pass: "(Quên mật khẩu)"
     edit:
       title: "Chỉnh sửa người dùng"
       confirmation: "Xác nhận"
@@ -67,4 +69,17 @@ vi:
     account_activation:
       welcome: "Chào mừng tới Sample App! Click vào link để kích hoạt tài khoản:"
       activate: "Kích hoạt"
-
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      info: "email gửi với mã kích hoạt"
+      danger: "Email Không thây trong database"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      update: "Update password"
+      confirmation: "Confirmation"
+      can_not_be_empty: "Không thể rỗng"
+      finish: "Password đã được đổi."
+      time_out: "Password reset has expired."
+      email: "Để tạo lại password click vào link dưới:"
