@@ -21,6 +21,7 @@ en:
       user: "User"
       update: "Profile updated"
       flash_log_in: "Please log in."
+      forgot_pass: "(forgot password)"
     edit:
       title: "Edit user"
       confirmation: "Confirmation"
@@ -68,3 +69,17 @@ en:
     account_activation:
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+  password_resets:
+    new:
+      title: "Forgot password"
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      update: "Update password"
+      confirmation: "Confirmation"
+      can_not_be_empty: "can't be empty"
+      finish: "Password has been reset."
+      time_out: "Password reset has expired."
+      email: "To reset your password click the link below:"
