@@ -36,12 +36,16 @@ vi:
       title: "Danh sách người dùng"
       delete: "Xóa"
       confirm: "Bạn có chắc chắn?"
+      log_in: "hãy đăng nhập"
     create:
       check_your_email: "Please check your email to activate your account."
       error: "Error, please try again"
     destroy:
       delete_noti: "Đã xoá user"
       cant_find_user: "Không thể xoá user"
+    info:
+      view_pro: "Xem hồ sơ"
+      micropost: "micropost"
   header:
     sample_app: "Sample app"
     home: "Trang chủ"
@@ -83,3 +87,14 @@ vi:
       finish: "Password đã được đổi."
       time_out: "Password reset has expired."
       email: "Để tạo lại password click vào link dưới:"
+  micropost:
+    create: "Đã tạo Micropost!"
+    content_demo: "viết nội dung micropost..."
+    post: "Đăng"
+    feed: "Micropost Feed"
+    delete: "Xóa"
+    sure: "Chắc chưa?"
+    destroy: "Xóa Micropost"
+    pic_size: "phải nhỏ hơn 5MB"
+    change_size: "Đổi"
+    aler: "Maximum file size là 5MB. Hãy chọn file nhỏ hơn."
