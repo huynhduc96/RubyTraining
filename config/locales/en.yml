@@ -36,12 +36,16 @@ en:
       title: "All users"
       delete: "delete"
       confirm: "You sure?"
+      log_in: "Please log in."
     create:
       check_your_email: "Please check your email to activate your account."
       error: "Error, please try again"
     destroy:
       delete_noti: "delete"
       cant_find_user: "can't user"
+    info:
+      view_pro: "view my profile"
+      micropost: "micropost"
   header:
     sample_app: "Sample app"
     home: "Home"
@@ -83,3 +87,14 @@ en:
       finish: "Password has been reset."
       time_out: "Password reset has expired."
       email: "To reset your password click the link below:"
+  micropost:
+    create: "Micropost created!"
+    content_demo: "Compose new micropost..."
+    post: "Post"
+    feed: "Micropost Feed"
+    delete: "delete"
+    sure: "You sure?"
+    destroy: "Micropost deleted"
+    pic_size: "should be less than 5MB"
+    change_size: "change"
+    aler: "Maximum file size is 5MB. Please choose a smaller file."
