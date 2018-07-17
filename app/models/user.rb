@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   before_save :downcase_email
   before_create :create_activation_digest
   attr_accessor :remember_token, :activation_token, :reset_token
@@ -57,14 +58,15 @@ class User < ApplicationRecord
     reset_sent_at < Settings.time_limit.hours.ago
   end
 
+
   class << self
     def digest string
       cost =
-        if ActiveModel::SecurePassword.min_cost
-          BCrypt::Engine::MIN_COST
-        else
-          BCrypt::Engine.cost
-        end
+          if ActiveModel::SecurePassword.min_cost
+            BCrypt::Engine::MIN_COST
+          else
+            BCrypt::Engine.cost
+          end
       BCrypt::Password.create string, cost: cost
     end
 

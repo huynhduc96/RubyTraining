@@ -98,3 +98,5 @@ vi:
     pic_size: "phải nhỏ hơn 5MB"
     change_size: "Đổi"
     aler: "Maximum file size là 5MB. Hãy chọn file nhỏ hơn."
+    micropost: "Micropost"
+    contant: "The form contains"
