@@ -98,3 +98,5 @@ en:
     pic_size: "should be less than 5MB"
     change_size: "change"
     aler: "Maximum file size is 5MB. Please choose a smaller file."
+    micropost: "Micropost"
+    contant: "The form contains"

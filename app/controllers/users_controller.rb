@@ -9,8 +9,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user&.activated
-    redirect_to root_url
+    if @user&.activated
+      @microposts = @user.microposts.paginate page: params[:page],
+        per_page: Settings.users.per_page
+    else
+      redirect_to root_url
+    end
   end
 
   def index
@@ -31,7 +35,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit;
+  end
 
   def update
     if @user.update_attributes user_params
@@ -56,7 +61,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+                                 :password_confirmation
   end
 
   def find_user
