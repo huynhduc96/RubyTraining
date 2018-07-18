@@ -100,3 +100,8 @@ en:
     aler: "Maximum file size is 5MB. Please choose a smaller file."
     micropost: "Micropost"
     contant: "The form contains"
+  follow:
+    submit_follow: "Follow"
+    submit_unfollow: "Unfollow"
+    view_profile: "view my profile"
+    following: "Following"
