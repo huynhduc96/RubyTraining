@@ -11,3 +11,4 @@
   max_content: 140
   size_pic: 5
   resize_max: 400
+  max_user: 50
